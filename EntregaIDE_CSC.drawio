@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="bRJgei908u_RhBmGHhT5" name="Página-1">
-    <mxGraphModel dx="1288" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1030" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -57,14 +57,14 @@
         <mxCell id="16" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="+ getNombre(): String&lt;br&gt;+ getPrecio(): double&lt;br&gt;+ getCategoria(): CategoriaProducto&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="220" x="1050" y="275" as="geometry" />
         </mxCell>
-        <mxCell id="17" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="EstadoPedido" vertex="1">
-          <mxGeometry height="30" width="200" x="150" y="145" as="geometry" />
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="&lt;div&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/div&gt;EstadoPedido" vertex="1">
+          <mxGeometry height="35" width="200" x="150" y="140" as="geometry" />
         </mxCell>
         <mxCell id="18" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="PENDIENTE&#xa;EN_REPARTO&#xa;ENTREGADO&#xa;CANCELADO" vertex="1">
           <mxGeometry height="80" width="200" x="150" y="175" as="geometry" />
         </mxCell>
-        <mxCell id="19" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="EstadoRepartidor" vertex="1">
-          <mxGeometry height="30" width="200" x="1370" y="540" as="geometry" />
+        <mxCell id="19" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="&lt;div&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/div&gt;EstadoRepartidor" vertex="1">
+          <mxGeometry height="50" width="200" x="1370" y="520" as="geometry" />
         </mxCell>
         <mxCell id="20" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="DISPONIBLE&#xa;OCUPADO" vertex="1">
           <mxGeometry height="45" width="200" x="1370" y="570" as="geometry" />

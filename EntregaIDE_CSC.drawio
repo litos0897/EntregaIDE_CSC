@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="bRJgei908u_RhBmGHhT5" name="Página-1">
+    <mxGraphModel dx="858" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="Usuario" vertex="1">
+          <mxGeometry height="30" width="220" x="630" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="- nombre: String&#xa;- email: String&#xa;- telefono: String" vertex="1">
+          <mxGeometry height="60" width="220" x="630" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;strokeColor=default;" value="+ getNombre(): String&lt;br&gt;+ getEmail(): String&lt;br&gt;+ getTelefono(): String&lt;br&gt;+ setEmail(String): void&lt;br&gt;+ setTelefono(String): void" vertex="1">
+          <mxGeometry height="100" width="220" x="630" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="Cliente" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="A_nEClZXRjm21Ihe0eq3-50" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="465" y="132" />
+            </Array>
+            <mxPoint x="530" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="- pedidos: List&lt;Pedido&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="+ agregarPedido(Pedido): void" vertex="1">
+          <mxGeometry height="30" width="220" x="300" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="Repartidor" vertex="1">
+          <mxGeometry height="30" width="220" x="970" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="- zonaReparto: String&#xa;- estado: EstadoRepartidor" vertex="1">
+          <mxGeometry height="45" width="220" x="970" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="+ getZonaReparto(): String&lt;br&gt;+ getEstado(): EstadoRepartidor&lt;br&gt;+ setZonaReparto(String): void&lt;br&gt;+ isDisponible(): boolean" vertex="1">
+          <mxGeometry height="75" width="220" x="970" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="Pedido" vertex="1">
+          <mxGeometry height="30" width="300" x="610" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="- id: int&lt;br&gt;- fechaPedido: Date&lt;br&gt;- estado: EstadoPedido&lt;br&gt;- cliente: Cliente&lt;br&gt;- repartidor: Repartidor&lt;br&gt;- productos: List" vertex="1">
+          <mxGeometry height="100" width="300" x="610" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="+ getId(): int&lt;br&gt;+ getFecha(): Date&lt;br&gt;+ getEstado(): EstadoPedido&lt;br&gt;+ getCliente(): Cliente&lt;br&gt;+ getRepartidor(): Repartidor&lt;br&gt;+ getProductos(): List&lt;br&gt;+ agregarProducto(Producto): void&lt;br&gt;+ calcularTotal(): double&lt;br&gt;+ asignarRepartidor(Repartidor): void&lt;br&gt;+ entregarPedido(): void&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="300" x="610" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="Producto" vertex="1">
+          <mxGeometry height="30" width="220" x="1050" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="- nombre: String&lt;br&gt;- precio: double&lt;br&gt;- categoria: String" vertex="1">
+          <mxGeometry height="60" width="220" x="1050" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="+ getNombre(): String&lt;br&gt;+ getPrecio(): double&lt;br&gt;+ getCategoria(): String&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="1050" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="&lt;div&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/div&gt;EstadoPedido" vertex="1">
+          <mxGeometry height="35" width="200" x="150" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="PENDIENTE&#xa;EN_REPARTO&#xa;ENTREGADO&#xa;CANCELADO" vertex="1">
+          <mxGeometry height="80" width="200" x="150" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=13;fontStyle=1;shape=mxgraph.uml.class;" value="&lt;div&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/div&gt;EstadoRepartidor" vertex="1">
+          <mxGeometry height="50" width="200" x="1370" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontSize=12;" value="DISPONIBLE&#xa;OCUPADO" vertex="1">
+          <mxGeometry height="45" width="200" x="1370" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="10" style="html=1;exitX=1.01;exitY=0.044;exitDx=0;exitDy=0;entryX=0.002;entryY=0.162;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;exitPerimeter=0;entryPerimeter=0;" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" connectable="0" parent="40" style="resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=11;" value="«usa»" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="17" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A_nEClZXRjm21Ihe0eq3-44" edge="1" parent="1" source="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zqrX7j-gut0sh6hUv11r-47" edge="1" parent="1" source="18" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.39;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;dashed=1;" target="12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="195" />
+              <mxPoint x="440" y="80" />
+            </Array>
+            <mxPoint x="420" y="220" as="sourcePoint" />
+            <mxPoint x="600" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zqrX7j-gut0sh6hUv11r-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;lt;&amp;lt;usa&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="420" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zqrX7j-gut0sh6hUv11r-49" edge="1" parent="1" source="15" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="230" />
+              <mxPoint x="980" y="65" />
+            </Array>
+            <mxPoint x="980" y="230" as="sourcePoint" />
+            <mxPoint x="940" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zqrX7j-gut0sh6hUv11r-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Contiene&lt;div&gt;1*&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="980" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zqrX7j-gut0sh6hUv11r-53" edge="1" parent="1" source="4" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.003;entryY=0.063;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" target="10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="890" y="590" as="sourcePoint" />
+            <mxPoint x="940" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zqrX7j-gut0sh6hUv11r-54" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.887;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="360" />
+              <mxPoint x="890" y="360" />
+            </Array>
+            <mxPoint x="1010" y="500" as="sourcePoint" />
+            <mxPoint x="890.0000000000001" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
